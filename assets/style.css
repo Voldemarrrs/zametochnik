@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(0, 0,0,0.8);
+    font-family: 'Raleway', sans-serif;
+}
+
+input, button{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+ul,li{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoList{
+    margin-top: 48px;
+}
+
+.todoList h1{
+    color: rgb(139, 171, 199);
+}
+
+.todoList form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    gap: 12px;
+}
+
+.todoList form input{
+    width: 600px;
+    padding: 12px 0 12px 6px;
+    outline: none;
+    border: 2px solid transparent;
+transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    background-color:#fff ;
+    border-radius: 8px;
+}
+
+.todoList form input:hover{
+    border: 2px solid rgba(0, 98, 218, 0.505);
+}
+
+.todoList form button{
+    width: 600px;
+    padding: 12px 0 12px 6px;
+    outline: none;
+    color: rgb(67, 67, 158);
+    border: 2px solid blue;
+transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    background-color:transparent ;
+    border-radius: 8px;
+}
+
+.todoList form button:hover{
+    background-color: blue;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.todoList .lists{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.todoList .lists .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+background-color: #fff;
+    width: 600px;
+    padding: 12px;
+    border-radius: 8px;
+    
+}
+
+.todoList .lists .list p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.todoList .lists .list .done{
+    outline: none;
+    border: none;
+    background-color: rgba(12, 159, 7, 0.513);
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:  all 0.3s ease-in-out;
+}
+
+.todoList .lists .list .done:hover{
+    background-color: rgb(12, 159, 7);
+}
+
+.todoList .lists .list .remove{
+    outline: none;
+    border: none;
+    background-color: rgba(225, 21, 6, 0.513);
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:  all 0.3s ease-in-out;
+}
+
+.todoList .lists .list .remove:hover{
+    background-color: rgb(225, 21, 6);
+}
