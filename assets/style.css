@@ -136,3 +136,11 @@ background-color: #fff;
 .todoList .lists .list .remove:hover{
     background-color: rgb(225, 21, 6);
 }
+
+.active{
+    border: 2px solid #2bff40;
+}
+
+.doneActive{
+    display: none;
+}
